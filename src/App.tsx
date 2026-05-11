@@ -18,7 +18,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       {showResume && <ResumeModal onDismiss={() => setShowResume(false)} />}
       <Routes>
         <Route path="/" element={<LandSelectionScreen />} />

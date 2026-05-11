@@ -7,6 +7,7 @@
   "license": "MIT",
   "homepage": "https://raj1882.github.io/ambers-sats-adventure",
   "dependencies": {
+    "ajv": "^8.20.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
