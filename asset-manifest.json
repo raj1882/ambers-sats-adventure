@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ambers-sats-adventure/static/css/main.f9242f15.css",
+    "main.js": "/ambers-sats-adventure/static/js/main.7160209e.js",
+    "index.html": "/ambers-sats-adventure/index.html",
+    "main.f9242f15.css.map": "/ambers-sats-adventure/static/css/main.f9242f15.css.map",
+    "main.7160209e.js.map": "/ambers-sats-adventure/static/js/main.7160209e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9242f15.css",
+    "static/js/main.7160209e.js"
+  ]
+}
