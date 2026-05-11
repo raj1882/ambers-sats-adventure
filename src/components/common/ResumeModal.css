@@ -1,0 +1,93 @@
+/* components/common/ResumeModal.css */
+
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.resume-modal__card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  max-width: 90vw;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  animation: slideUp 0.4s ease;
+}
+
+.resume-modal__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-modal__title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2D6A4F;
+  margin-bottom: 0.75rem;
+}
+
+.resume-modal__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #6C757D;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.resume-modal__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.resume-modal__btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+
+.resume-modal__btn:active {
+  transform: scale(0.97);
+}
+
+.resume-modal__btn--primary {
+  background: linear-gradient(145deg, #2D6A4F, #1B4332);
+  color: white;
+}
+
+.resume-modal__btn--secondary {
+  background: #F8F9FA;
+  color: #6C757D;
+  border: 2px solid #dee2e6;
+}
+
+.resume-modal__autosave {
+  font-size: 0.875rem;
+  color: #6C757D;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

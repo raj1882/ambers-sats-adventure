@@ -1,0 +1,125 @@
+/* components/common/FeedbackOverlay.css */
+
+.feedback-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+  padding: var(--space-4);
+}
+
+.feedback-overlay--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.feedback-overlay__card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  max-width: 90vw;
+  width: 400px;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform var(--transition-base);
+}
+
+.feedback-overlay--visible .feedback-overlay__card {
+  transform: scale(1);
+}
+
+.feedback-overlay__shield {
+  width: 120px;
+  height: 100px;
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-overlay__shield--full {
+  animation: shieldPulse 1s ease infinite alternate;
+}
+
+.feedback-overlay__shield--half {
+  opacity: 0.6;
+  filter: grayscale(0.5);
+}
+
+.feedback-overlay__marks {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.feedback-overlay__marks--correct {
+  color: var(--success);
+}
+
+.feedback-overlay__marks--partial {
+  color: var(--warning);
+}
+
+.feedback-overlay__marks--incorrect {
+  color: var(--error);
+}
+
+.feedback-overlay__feedback {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+  line-height: 1.5;
+}
+
+.feedback-overlay__powerup {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--hint-gold);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.feedback-overlay__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.feedback-overlay__button {
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+  width: 100%;
+}
+
+.feedback-overlay__button--next {
+  background: linear-gradient(145deg, var(--forest-primary), #1B4332);
+  color: white;
+}
+
+.feedback-overlay__button--retry {
+  background: linear-gradient(145deg, var(--warning), #d35400);
+  color: white;
+}
+
+.feedback-overlay__button:active {
+  transform: scale(0.95);
+}
+
+@keyframes shieldPulse {
+  from { transform: scale(1); filter: drop-shadow(0 0 10px var(--shield-gold)); }
+  to { transform: scale(1.05); filter: drop-shadow(0 0 20px var(--shield-gold)); }
+}

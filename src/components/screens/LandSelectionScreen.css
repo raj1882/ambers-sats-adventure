@@ -1,0 +1,119 @@
+/* components/screens/LandSelectionScreen.css */
+
+.land-selection {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #E8F5E9 0%, #C8E6C9 100%);
+  padding: var(--space-6) var(--space-4);
+}
+
+.land-selection__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  text-align: center;
+  color: var(--forest-primary);
+  margin-bottom: var(--space-2);
+}
+
+.land-selection__subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+  font-size: var(--text-lg);
+}
+
+.land-selection__grid {
+  display: grid;
+  gap: var(--space-6);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.land-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.land-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.land-card--locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.land-card--locked:hover {
+  transform: none;
+  box-shadow: var(--shadow-md);
+}
+
+.land-card__emoji {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-2);
+}
+
+.land-card__name {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+  color: var(--text-primary);
+}
+
+.land-card__description {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.land-card__progress {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.land-card__progress-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: var(--radius-full);
+  margin-top: var(--space-2);
+  overflow: hidden;
+}
+
+.land-card__progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.land-card__progress-fill--forest_of_fractions {
+  background: var(--forest-secondary);
+}
+
+.land-card__progress-fill--labyrinth_of_logic {
+  background: var(--labyrinth-secondary);
+}
+
+.land-card__lock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}

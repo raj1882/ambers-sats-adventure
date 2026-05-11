@@ -1,0 +1,71 @@
+/* components/common/NumberPad.css */
+
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--pad-gap);
+  max-width: 360px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.number-pad__button {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: var(--pad-button-size);
+  font-family: var(--font-heading);
+  font-size: var(--pad-font-size);
+  font-weight: 700;
+  color: var(--text-primary);
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 2px solid #ddd;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.number-pad__button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+
+.number-pad__button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.number-pad__button--clear {
+  background: linear-gradient(145deg, #ff6b6b, #ee5a5a);
+  color: white;
+  border-color: #e74c3c;
+}
+
+.number-pad__button--backspace {
+  background: linear-gradient(145deg, #f39c12, #e67e22);
+  color: white;
+  border-color: #d35400;
+}
+
+.number-pad__button--submit {
+  grid-column: span 3;
+  aspect-ratio: auto;
+  min-height: 56px;
+  background: linear-gradient(145deg, var(--forest-primary), #1B4332);
+  color: white;
+  font-size: var(--text-lg);
+  border-color: var(--forest-primary);
+}
+
+@media (min-width: 481px) {
+  .number-pad {
+    max-width: 400px;
+    gap: var(--space-3);
+  }
+  .number-pad__button {
+    font-size: var(--text-2xl);
+  }
+}

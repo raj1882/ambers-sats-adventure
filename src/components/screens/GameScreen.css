@@ -1,0 +1,100 @@
+/* components/screens/GameScreen.css */
+
+.game-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #F0F7F4 0%, #E8F5E9 100%);
+}
+
+.game-screen__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-sm);
+}
+
+.game-screen__back-btn {
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: 2px solid var(--forest-primary);
+  border-radius: var(--radius-md);
+  color: var(--forest-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
+}
+
+.game-screen__back-btn:active {
+  background: var(--forest-primary);
+  color: white;
+}
+
+.game-screen__progress {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.game-screen__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-2);
+  gap: var(--space-2);
+  overflow-y: auto;
+}
+
+.game-screen__climber {
+  flex-shrink: 0;
+  padding: var(--space-2) 0;
+}
+
+.game-screen__question {
+  flex: 1;
+  min-height: 0;
+}
+
+.game-screen__input {
+  flex-shrink: 0;
+  padding-bottom: var(--space-4);
+}
+
+@media (max-height: 700px) {
+  .game-screen__climber {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .game-screen__main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-6);
+    padding: var(--space-6);
+  }
+
+  .game-screen__climber {
+    width: 200px;
+    position: sticky;
+    top: 80px;
+  }
+
+  .game-screen__question {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .game-screen__input {
+    width: 360px;
+  }
+}

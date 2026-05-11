@@ -1,0 +1,948 @@
+{
+  "metadata": {
+    "version": "MVP-1.0",
+    "lands": [
+      "forest_of_fractions",
+      "labyrinth_of_logic"
+    ],
+    "total_questions": 20,
+    "target_audience": "Year 6 SATs (UK KS2)",
+    "exam_date": "2026"
+  },
+  "questions": [
+    {
+      "id": "F1",
+      "land": "forest_of_fractions",
+      "topic": "Adding fractions with same denominator",
+      "type": "arithmetic",
+      "difficulty": 1,
+      "question_text": "Calculate: 3/8 + 2/8",
+      "correct_answer": "5/8",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Keep the denominator the same",
+          "expected_value": "8",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Add the numerators: 3 + 2",
+          "expected_value": "5",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "5/16",
+          "reason": "Added numerators AND denominators",
+          "method_error": "incorrect_addition_rule"
+        },
+        {
+          "value": "6/8",
+          "reason": "Multiplied instead of added",
+          "method_error": "operation_confusion"
+        },
+        {
+          "value": "3/8",
+          "reason": "Only kept first fraction",
+          "method_error": "incomplete_working"
+        }
+      ],
+      "hint_card": "When adding fractions with the SAME denominator, keep the bottom number the same and only add the top numbers! \ud83c\udf32",
+      "marks_available": 1,
+      "time_estimate_seconds": 30
+    },
+    {
+      "id": "F2",
+      "land": "forest_of_fractions",
+      "topic": "Adding fractions with different denominators",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Calculate: 1/4 + 1/2",
+      "correct_answer": "3/4",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Find common denominator (LCM of 4 and 2)",
+          "expected_value": "4",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Convert 1/2 to equivalent fraction with denominator 4",
+          "expected_value": "2/4",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Add: 1/4 + 2/4",
+          "expected_value": "3/4",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "2/6",
+          "reason": "Added numerators and denominators separately",
+          "method_error": "incorrect_addition_rule"
+        },
+        {
+          "value": "2/4",
+          "reason": "Forgot to convert 1/2 before adding",
+          "method_error": "missing_conversion"
+        },
+        {
+          "value": "1/6",
+          "reason": "Multiplied denominators and added numerators",
+          "method_error": "random_operation"
+        }
+      ],
+      "hint_card": "You can only add fractions when they have the SAME denominator. Find the lowest common multiple! \ud83d\udd22",
+      "marks_available": 2,
+      "time_estimate_seconds": 60
+    },
+    {
+      "id": "F3",
+      "land": "forest_of_fractions",
+      "topic": "Converting improper fractions to mixed numbers",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Write 17/5 as a mixed number.",
+      "correct_answer": "3 2/5",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Divide 17 by 5 to find whole numbers",
+          "expected_value": "3 remainder 2",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Write as whole number + remainder/denominator",
+          "expected_value": "3 2/5",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "3.4",
+          "reason": "Gave decimal answer instead of fraction",
+          "method_error": "format_error"
+        },
+        {
+          "value": "3/5",
+          "reason": "Only wrote remainder, not mixed number",
+          "method_error": "incomplete_conversion"
+        },
+        {
+          "value": "12/5",
+          "reason": "Subtracted instead of divided",
+          "method_error": "wrong_operation"
+        }
+      ],
+      "hint_card": "Divide the top number by the bottom number. The answer is your whole number, and the remainder goes over the original bottom number! \ud83c\udf33",
+      "marks_available": 1,
+      "time_estimate_seconds": 30
+    },
+    {
+      "id": "F4",
+      "land": "forest_of_fractions",
+      "topic": "Fraction of an amount",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Calculate 3/4 of 28",
+      "correct_answer": "21",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Divide by the denominator: 28 \u00f7 4",
+          "expected_value": "7",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Multiply by the numerator: 7 \u00d7 3",
+          "expected_value": "21",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "7",
+          "reason": "Only divided by denominator",
+          "method_error": "incomplete_method"
+        },
+        {
+          "value": "84",
+          "reason": "Multiplied 28 by 3 instead of dividing first",
+          "method_error": "wrong_order"
+        },
+        {
+          "value": "10.5",
+          "reason": "Divided by 4 then divided by 2",
+          "method_error": "double_division"
+        }
+      ],
+      "hint_card": "To find a fraction of an amount: divide by the BOTTOM number first, then multiply by the TOP number! \ud83c\udf42",
+      "marks_available": 2,
+      "time_estimate_seconds": 45
+    },
+    {
+      "id": "F5",
+      "land": "forest_of_fractions",
+      "topic": "Equivalent fractions",
+      "type": "arithmetic",
+      "difficulty": 1,
+      "question_text": "Fill in the missing number: 2/5 = ?/15",
+      "correct_answer": "6",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Find what 5 was multiplied by to get 15",
+          "expected_value": "3",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Multiply the numerator by the same amount: 2 \u00d7 3",
+          "expected_value": "6",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "7",
+          "reason": "Added 5 to numerator (5+2)",
+          "method_error": "wrong_pattern"
+        },
+        {
+          "value": "10",
+          "reason": "Multiplied by 5 instead of 3",
+          "method_error": "wrong_multiplier"
+        },
+        {
+          "value": "2",
+          "reason": "Kept numerator the same",
+          "method_error": "no_change"
+        }
+      ],
+      "hint_card": "Whatever you do to the bottom number, you MUST do to the top number too! \u2728",
+      "marks_available": 1,
+      "time_estimate_seconds": 30
+    },
+    {
+      "id": "F6",
+      "land": "forest_of_fractions",
+      "topic": "Decimal to fraction conversion",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Write 0.75 as a fraction in its simplest form.",
+      "correct_answer": "3/4",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Write as fraction: 75/100",
+          "expected_value": "75/100",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Simplify by dividing by 25",
+          "expected_value": "3/4",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "75/100",
+          "reason": "Did not simplify",
+          "method_error": "incomplete_simplification"
+        },
+        {
+          "value": "3/5",
+          "reason": "Simplified incorrectly",
+          "method_error": "wrong_simplification"
+        },
+        {
+          "value": "7/5",
+          "reason": "Misread decimal places",
+          "method_error": "place_value_error"
+        }
+      ],
+      "hint_card": "The number of decimal places tells you the denominator: 2 places = hundredths (100). Then simplify by dividing top and bottom by the same number! \ud83c\udf3f",
+      "marks_available": 2,
+      "time_estimate_seconds": 45
+    },
+    {
+      "id": "F7",
+      "land": "forest_of_fractions",
+      "topic": "Percentage of an amount",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Find 15% of 80",
+      "correct_answer": "12",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Find 10%: 80 \u00f7 10",
+          "expected_value": "8",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Find 5%: 8 \u00f7 2",
+          "expected_value": "4",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Add: 10% + 5%",
+          "expected_value": "12",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "8",
+          "reason": "Only found 10%",
+          "method_error": "incomplete_method"
+        },
+        {
+          "value": "20",
+          "reason": "Added 15 to 80",
+          "method_error": "wrong_operation"
+        },
+        {
+          "value": "1200",
+          "reason": "Multiplied 80 \u00d7 15",
+          "method_error": "percentage_confusion"
+        }
+      ],
+      "hint_card": "Break percentages into friendly chunks: 10% and 5%. 10% = divide by 10. 5% = half of 10%! \ud83d\udca1",
+      "marks_available": 2,
+      "time_estimate_seconds": 60
+    },
+    {
+      "id": "F8",
+      "land": "forest_of_fractions",
+      "topic": "Ordering fractions, decimals, percentages",
+      "type": "reasoning",
+      "difficulty": 3,
+      "question_text": "Put these in order from smallest to largest: 0.3, 1/4, 35%",
+      "correct_answer": "1/4, 0.3, 35%",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Convert all to same format (e.g., decimals)",
+          "expected_value": "0.25, 0.3, 0.35",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Order the decimals",
+          "expected_value": "0.25, 0.3, 0.35",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "0.3, 1/4, 35%",
+          "reason": "Ordered by appearance, not value",
+          "method_error": "no_conversion"
+        },
+        {
+          "value": "35%, 0.3, 1/4",
+          "reason": "Ordered largest to smallest",
+          "method_error": "wrong_direction"
+        },
+        {
+          "value": "1/4, 35%, 0.3",
+          "reason": "Mixed up 0.3 and 35%",
+          "method_error": "decimal_place_confusion"
+        }
+      ],
+      "hint_card": "Convert EVERYTHING to the same type first \u2014 decimals are usually easiest! Then compare. \ud83d\udd04",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "F9",
+      "land": "forest_of_fractions",
+      "topic": "Multiplying fractions",
+      "type": "arithmetic",
+      "difficulty": 3,
+      "question_text": "Calculate: 2/3 \u00d7 3/5",
+      "correct_answer": "2/5",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Multiply numerators: 2 \u00d7 3",
+          "expected_value": "6",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Multiply denominators: 3 \u00d7 5",
+          "expected_value": "15",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Simplify 6/15",
+          "expected_value": "2/5",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "6/15",
+          "reason": "Did not simplify",
+          "method_error": "incomplete_simplification"
+        },
+        {
+          "value": "5/8",
+          "reason": "Added numerators and denominators",
+          "method_error": "wrong_operation"
+        },
+        {
+          "value": "5/15",
+          "reason": "Cross-multiplied incorrectly",
+          "method_error": "cross_multiply_error"
+        }
+      ],
+      "hint_card": "Multiply top \u00d7 top, bottom \u00d7 bottom. Then simplify if you can! \ud83d\udd25",
+      "marks_available": 2,
+      "time_estimate_seconds": 60
+    },
+    {
+      "id": "F10",
+      "land": "forest_of_fractions",
+      "topic": "Fraction word problem (Challenge)",
+      "type": "reasoning",
+      "difficulty": 4,
+      "question_text": "Amber has 24 sweets. She gives 1/3 to her brother and 1/4 to her sister. How many sweets does she have left?",
+      "correct_answer": "10",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Find 1/3 of 24: 24 \u00f7 3",
+          "expected_value": "8",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Find 1/4 of 24: 24 \u00f7 4",
+          "expected_value": "6",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Add sweets given away: 8 + 6",
+          "expected_value": "14",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "Subtract from total: 24 - 14",
+          "expected_value": "10",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "14",
+          "reason": "Gave total given away as answer",
+          "method_error": "misread_question"
+        },
+        {
+          "value": "18",
+          "reason": "Only subtracted 1/3",
+          "method_error": "incomplete_subtraction"
+        },
+        {
+          "value": "2",
+          "reason": "Subtracted fractions: 1/3 - 1/4",
+          "method_error": "wrong_operation"
+        }
+      ],
+      "hint_card": "Read carefully \u2014 the question asks how many are LEFT, not how many were given away! Find each fraction separately, then work out what's remaining. \ud83c\udfaf",
+      "marks_available": 2,
+      "time_estimate_seconds": 120
+    },
+    {
+      "id": "L1",
+      "land": "labyrinth_of_logic",
+      "topic": "Multi-step addition and subtraction",
+      "type": "reasoning",
+      "difficulty": 1,
+      "question_text": "Amber has \u00a315. She buys a book for \u00a36.75 and a pen for \u00a32.50. How much change does she get?",
+      "correct_answer": "5.75",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Add costs: \u00a36.75 + \u00a32.50",
+          "expected_value": "9.25",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Subtract from total: \u00a315.00 - \u00a39.25",
+          "expected_value": "5.75",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "4.25",
+          "reason": "Subtracted \u00a36.75 from \u00a315 but forgot pen",
+          "method_error": "incomplete_subtraction"
+        },
+        {
+          "value": "9.25",
+          "reason": "Gave total spent, not change",
+          "method_error": "misread_question"
+        },
+        {
+          "value": "24.25",
+          "reason": "Added all numbers",
+          "method_error": "wrong_operation"
+        }
+      ],
+      "hint_card": "Work out what she SPENT first, then subtract that from what she STARTED with. Read the question twice! \ud83d\udcb0",
+      "marks_available": 2,
+      "time_estimate_seconds": 60
+    },
+    {
+      "id": "L2",
+      "land": "labyrinth_of_logic",
+      "topic": "Missing number problems",
+      "type": "reasoning",
+      "difficulty": 2,
+      "question_text": "? + 145 = 382. What is the missing number?",
+      "correct_answer": "237",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Rearrange: ? = 382 - 145",
+          "expected_value": "237",
+          "marks": 2
+        }
+      ],
+      "distractors": [
+        {
+          "value": "527",
+          "reason": "Added instead of subtracted",
+          "method_error": "wrong_operation"
+        },
+        {
+          "value": "237",
+          "reason": "Correct",
+          "method_error": ""
+        },
+        {
+          "value": "263",
+          "reason": "Subtraction error (382-145=263)",
+          "method_error": "calculation_error"
+        }
+      ],
+      "hint_card": "If ? + a = b, then ? = b - a. Do the OPPOSITE operation! \ud83c\udf00",
+      "marks_available": 1,
+      "time_estimate_seconds": 45
+    },
+    {
+      "id": "L3",
+      "land": "labyrinth_of_logic",
+      "topic": "Long multiplication (2-digit \u00d7 2-digit)",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Calculate: 24 \u00d7 36",
+      "correct_answer": "864",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "24 \u00d7 6 = 144",
+          "expected_value": "144",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "24 \u00d7 30 = 720 (drop the zero)",
+          "expected_value": "720",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "144 + 720",
+          "expected_value": "864",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "504",
+          "reason": "24 \u00d7 6 + 24 \u00d7 3 (forgot to drop zero)",
+          "method_error": "zero_trap"
+        },
+        {
+          "value": "384",
+          "reason": "Only did 24 \u00d7 6 + 24 \u00d7 10",
+          "method_error": "incomplete_multiplication"
+        },
+        {
+          "value": "144",
+          "reason": "Only did first step",
+          "method_error": "incomplete_method"
+        }
+      ],
+      "hint_card": "\u26a0\ufe0f ZERO-TRAP ALERT! When multiplying by the tens digit, remember to DROP THE ZERO! 24 \u00d7 30 = 720, not 72! 0\ufe0f\u20e3",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "L4",
+      "land": "labyrinth_of_logic",
+      "topic": "Long division (3-digit \u00f7 1-digit)",
+      "type": "arithmetic",
+      "difficulty": 2,
+      "question_text": "Calculate: 528 \u00f7 6",
+      "correct_answer": "88",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "6 goes into 52 eight times (6 \u00d7 8 = 48)",
+          "expected_value": "48",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Subtract: 52 - 48 = 4, bring down 8",
+          "expected_value": "48",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "6 goes into 48 eight times",
+          "expected_value": "48",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "82",
+          "reason": "Forgot to bring down 8",
+          "method_error": "incomplete_bring_down"
+        },
+        {
+          "value": "87 remainder 6",
+          "reason": "Didn't divide final step correctly",
+          "method_error": "division_error"
+        },
+        {
+          "value": "3168",
+          "reason": "Multiplied instead of divided",
+          "method_error": "wrong_operation"
+        }
+      ],
+      "hint_card": "Bus stop method: how many times does 6 go into each part? Write the answer ABOVE, multiply BELOW, then subtract! \ud83d\ude8c",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "L5",
+      "land": "labyrinth_of_logic",
+      "topic": "Unit rate problems",
+      "type": "reasoning",
+      "difficulty": 2,
+      "question_text": "5 pens cost \u00a33.50. How much do 8 pens cost?",
+      "correct_answer": "5.60",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Find cost of 1 pen: \u00a33.50 \u00f7 5",
+          "expected_value": "0.70",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Multiply by 8: \u00a30.70 \u00d7 8",
+          "expected_value": "5.60",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "5.60",
+          "reason": "Correct",
+          "method_error": ""
+        },
+        {
+          "value": "8.50",
+          "reason": "Added \u00a33.50 + \u00a35",
+          "method_error": "wrong_operation"
+        },
+        {
+          "value": "4.20",
+          "reason": "\u00a33.50 \u00f7 5 = \u00a30.70, then \u00d7 6",
+          "method_error": "wrong_multiplier"
+        }
+      ],
+      "hint_card": "ALWAYS find the value of ONE first! Then you can find the value of ANY number. This is the 'Unit Rate' power-up! \u26a1",
+      "marks_available": 2,
+      "time_estimate_seconds": 75
+    },
+    {
+      "id": "L6",
+      "land": "labyrinth_of_logic",
+      "topic": "Multi-step word problem (time)",
+      "type": "reasoning",
+      "difficulty": 3,
+      "question_text": "A train leaves at 09:45 and arrives at 11:20. How long is the journey in minutes?",
+      "correct_answer": "95",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "From 09:45 to 11:45 would be 2 hours = 120 min",
+          "expected_value": "120",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "But it arrives at 11:20, so subtract 25 min",
+          "expected_value": "95",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "75",
+          "reason": "11:20 - 09:45 = 1 hour 35 min, but wrote 75 (1\u00d760+35=95)",
+          "method_error": "calculation_error"
+        },
+        {
+          "value": "135",
+          "reason": "Added instead of found difference",
+          "method_error": "wrong_operation"
+        },
+        {
+          "value": "1 hour 35 min",
+          "reason": "Correct method but wrong format",
+          "method_error": "format_error"
+        }
+      ],
+      "hint_card": "Break it into chunks! From 09:45 to 10:00 is 15 minutes. From 10:00 to 11:00 is 60 minutes. From 11:00 to 11:20 is 20 minutes. Add them up! \u23f0",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "L7",
+      "land": "labyrinth_of_logic",
+      "topic": "Ratio problems",
+      "type": "reasoning",
+      "difficulty": 3,
+      "question_text": "The ratio of red to blue marbles is 3:5. There are 24 red marbles. How many blue marbles are there?",
+      "correct_answer": "40",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "3 parts = 24 marbles, so 1 part = 24 \u00f7 3",
+          "expected_value": "8",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Blue = 5 parts, so 5 \u00d7 8",
+          "expected_value": "40",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "15",
+          "reason": "Multiplied 3 \u00d7 5",
+          "method_error": "ratio_confusion"
+        },
+        {
+          "value": "72",
+          "reason": "24 \u00d7 3",
+          "method_error": "wrong_multiplier"
+        },
+        {
+          "value": "64",
+          "reason": "24 + 40 (total)",
+          "method_error": "misread_question"
+        }
+      ],
+      "hint_card": "Find what ONE part is worth first! If 3 parts = 24, then 1 part = 24 \u00f7 3. Then multiply by the number of parts you need! \ud83d\udcca",
+      "marks_available": 2,
+      "time_estimate_seconds": 75
+    },
+    {
+      "id": "L8",
+      "land": "labyrinth_of_logic",
+      "topic": "Inverse operations",
+      "type": "reasoning",
+      "difficulty": 3,
+      "question_text": "A number is multiplied by 4, then 7 is added. The answer is 35. What was the original number?",
+      "correct_answer": "7",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Reverse the last step: 35 - 7",
+          "expected_value": "28",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Reverse the first step: 28 \u00f7 4",
+          "expected_value": "7",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "168",
+          "reason": "35 \u00d7 4 + 7 (went forwards)",
+          "method_error": "wrong_direction"
+        },
+        {
+          "value": "10.5",
+          "reason": "35 \u00f7 4 + 7 (wrong order)",
+          "method_error": "wrong_order"
+        },
+        {
+          "value": "28",
+          "reason": "Only did first reverse step",
+          "method_error": "incomplete_method"
+        }
+      ],
+      "hint_card": "Work BACKWARDS! Do the OPPOSITE of each step, in REVERSE order. Last step first! \ud83d\udd04",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "L9",
+      "land": "labyrinth_of_logic",
+      "topic": "Multi-step measurement conversion",
+      "type": "reasoning",
+      "difficulty": 3,
+      "question_text": "A rectangular garden is 4.5m long and 250cm wide. What is the perimeter in metres?",
+      "correct_answer": "14",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Convert width to metres: 250cm = 2.5m",
+          "expected_value": "2.5",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Perimeter = 2 \u00d7 (length + width) = 2 \u00d7 (4.5 + 2.5)",
+          "expected_value": "14",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "1400",
+          "reason": "Didn't convert, used cm throughout",
+          "method_error": "unit_error"
+        },
+        {
+          "value": "7",
+          "reason": "Only did 4.5 + 2.5 (forgot to double)",
+          "method_error": "incomplete_formula"
+        },
+        {
+          "value": "11.25",
+          "reason": "Multiplied instead of added",
+          "method_error": "wrong_operation"
+        }
+      ],
+      "hint_card": "Check your UNITS first! Convert everything to the SAME unit before calculating. Perimeter = add all sides (or 2 \u00d7 length + 2 \u00d7 width)! \ud83d\udccf",
+      "marks_available": 2,
+      "time_estimate_seconds": 90
+    },
+    {
+      "id": "L10",
+      "land": "labyrinth_of_logic",
+      "topic": "Challenge: Multi-step reasoning with tables",
+      "type": "reasoning",
+      "difficulty": 4,
+      "question_text": "A shop sells apples in bags of 6 for \u00a32.40 and oranges in bags of 4 for \u00a31.80. Amber buys 3 bags of apples and 2 bags of oranges. She pays with a \u00a320 note. How much change does she get?",
+      "correct_answer": "7.20",
+      "method_steps": [
+        {
+          "step_number": 1,
+          "description": "Cost of apples: 3 \u00d7 \u00a32.40",
+          "expected_value": "7.20",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Cost of oranges: 2 \u00d7 \u00a31.80",
+          "expected_value": "3.60",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Total cost: \u00a37.20 + \u00a33.60",
+          "expected_value": "10.80",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "Change: \u00a320.00 - \u00a310.80",
+          "expected_value": "9.20",
+          "marks": 1
+        }
+      ],
+      "distractors": [
+        {
+          "value": "13.80",
+          "reason": "\u00a320 - \u00a37.20 - \u00a33.60 but calculation error",
+          "method_error": "calculation_error"
+        },
+        {
+          "value": "10.80",
+          "reason": "Gave total cost, not change",
+          "method_error": "misread_question"
+        },
+        {
+          "value": "4.20",
+          "reason": "Only calculated apples, subtracted from \u00a320",
+          "method_error": "incomplete_method"
+        }
+      ],
+      "hint_card": "Take it one step at a time! Calculate each type separately, add them together, THEN work out the change. Don't rush! \ud83e\udde9",
+      "marks_available": 3,
+      "time_estimate_seconds": 120
+    }
+  ],
+  "scoring_rules": {
+    "two_mark_method": {
+      "description": "Method mark + Accuracy mark system",
+      "method_mark": "Awarded for correct working even if final answer is wrong",
+      "accuracy_mark": "Awarded for correct final answer",
+      "half_shield": "Visual indicator when method mark is earned but accuracy mark is not"
+    },
+    "adaptive_difficulty": {
+      "rule": "3-and-Up",
+      "description": "3 correct answers in a row triggers a Challenge Question",
+      "challenge_injection": "Difficulty increases by 1 level (max 4)",
+      "fallback": "If accuracy drops below 50% over 5+ questions, difficulty decreases"
+    },
+    "mastery": {
+      "standard_pass": "80% of questions completed in a Land",
+      "diamond_calculator": "100% accuracy with zero hints used",
+      "gateway_unlock": "Collect Golden Calculators from all Lands"
+    }
+  },
+  "ui_spec": {
+    "input_method": "on_screen_number_pad",
+    "path_visualisation": "vertical_mountain_climber",
+    "hint_display": "slide_in_card",
+    "zero_trap_alert": "animated_warning_banner",
+    "feedback_timing": "immediate"
+  }
+}

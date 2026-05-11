@@ -1,0 +1,105 @@
+/* styles/variables.css */
+/* Amber's SATs Adventure — Design Tokens */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  /* Colours */
+  --forest-primary: #2D6A4F;
+  --forest-secondary: #52B788;
+  --forest-accent: #D8F3DC;
+  --labyrinth-primary: #5A189A;
+  --labyrinth-secondary: #9D4EDD;
+  --labyrinth-accent: #E0AAFF;
+  --mountain-primary: #6C757D;
+  --mountain-snow: #F8F9FA;
+  --success: #2ECC71;
+  --warning: #F39C12;
+  --error: #E74C3C;
+  --hint-gold: #FFD700;
+  --shield-bronze: #CD7F32;
+  --shield-silver: #C0C0C0;
+  --shield-gold: #FFD700;
+  --text-primary: #212529;
+  --text-secondary: #6C757D;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+
+  /* Typography */
+  --font-heading: 'Nunito', 'Comic Sans MS', sans-serif;
+  --font-body: 'Open Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --shadow-glow: 0 0 20px rgba(255,215,0,0.4);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Number pad */
+  --pad-button-size: clamp(56px, 15vw, 72px);
+  --pad-gap: var(--space-2);
+  --pad-font-size: var(--text-xl);
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus states */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--forest-secondary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,56 @@
+/* components/common/HintCard.css */
+
+.hint-card {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 100%);
+  border-top: 4px solid var(--hint-gold);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: var(--space-6);
+  padding-top: var(--space-8);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  transform: translateY(100%);
+  transition: transform var(--transition-base);
+  z-index: 100;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.hint-card--visible {
+  transform: translateY(0);
+}
+
+.hint-card__icon {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-2);
+}
+
+.hint-card__text {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.hint-card__close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: rgba(0,0,0,0.1);
+  border: none;
+  font-size: var(--text-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hint-card__close:active {
+  background: rgba(0,0,0,0.2);
+}

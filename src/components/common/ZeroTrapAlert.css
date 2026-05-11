@@ -1,0 +1,56 @@
+/* components/common/ZeroTrapAlert.css */
+
+.zero-trap-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #FF6B6B, #FFE66D);
+  color: #333;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 700;
+  transform: translateY(-100%);
+  transition: transform var(--transition-base);
+  z-index: 200;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.zero-trap-alert--visible {
+  transform: translateY(0);
+  animation: shake 0.5s ease;
+}
+
+.zero-trap-alert__icon {
+  font-size: var(--text-xl);
+  flex-shrink: 0;
+}
+
+.zero-trap-alert__text {
+  flex: 1;
+}
+
+.zero-trap-alert__dismiss {
+  background: rgba(0,0,0,0.15);
+  border: none;
+  border-radius: var(--radius-full);
+  width: 28px;
+  height: 28px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  20% { transform: translateY(0) translateX(-10px); }
+  40% { transform: translateY(0) translateX(10px); }
+  60% { transform: translateY(0) translateX(-5px); }
+  80% { transform: translateY(0) translateX(5px); }
+}
